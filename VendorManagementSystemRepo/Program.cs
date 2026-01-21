@@ -68,7 +68,8 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddScoped<ApprovalService>();
+builder.Services.AddScoped<RenewalService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
