@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 namespace VendorManagementSystemRepo.Controllers
 {
-    [EnableCors("Open")]
+    [EnableCors("AllowAngular")]
     [Route("api/[controller]")]
     [ApiController]
 
