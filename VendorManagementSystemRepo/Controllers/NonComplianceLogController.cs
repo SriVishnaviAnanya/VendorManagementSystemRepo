@@ -1,21 +1,21 @@
-﻿using GovernanceApi.Data;
-using GovernanceApi.Models;
+﻿using VendorManagementSystemRepo.Data;
+using VendorManagementSystemRepo.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GovernanceApi.Controllers
+namespace VendorManagementSystemRepo.Controllers
 {
     [EnableCors("Open")]
     [Route("api/[controller]")]
     [ApiController]
     public class NonComplianceLogController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly VendorManagementSystemDb _dbContext;
 
-        public NonComplianceLogController(AppDbContext context)
+        public NonComplianceLogController(VendorManagementSystemDb context)
         {
-            _context = context;
+            _dbContext = context;
         }
 
         // GET: api/NonComplianceLog
@@ -23,13 +23,12 @@ namespace GovernanceApi.Controllers
         [HttpGet]
         public IActionResult GetLogs()
         {
-            var logs = _context.NonComplianceLogs.ToList();
+            var logs = _dbContext.NonComplianceLogs.ToList();
             return Ok(logs);
         }
 
         // POST: api/NonComplianceLog
         // This lets you add new logs via Swagger
-       
         [HttpPost]
         public IActionResult AddNonComplianceLog([FromBody] NonComplianceLog log)
         {
@@ -45,8 +44,8 @@ namespace GovernanceApi.Controllers
             {
                 log.Penalty = 5;
             }
-            _context.NonComplianceLogs.Add(log);
-            _context.SaveChanges();
+            _dbContext.NonComplianceLogs.Add(log);
+            _dbContext.SaveChanges();
             return Ok(log);
         }
     }

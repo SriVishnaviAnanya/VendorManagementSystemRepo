@@ -1,21 +1,21 @@
-﻿using GovernanceApi.Data;
-using GovernanceApi.DTOs;
-using GovernanceApi.Models;
-using GovernanceApi.Services;
+﻿using VendorManagementSystemRepo.Data;
+using VendorManagementSystemRepo.DTOs;
+using VendorManagementSystemRepo.Models;
+using VendorManagementSystemRepo.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GovernanceApi.Controllers
+namespace VendorManagementSystemRepo.Controllers
 {
     [EnableCors("Open")]
     [Route("api/[controller]")]
     [ApiController]
     public class PerformanceController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly VendorManagementSystemDb _context;
         private readonly PerformanceService _performanceService;
-        public PerformanceController(AppDbContext context, PerformanceService performanceService)
+        public PerformanceController(VendorManagementSystemDb context, PerformanceService performanceService)
         {
             _context = context;
             _performanceService = performanceService;

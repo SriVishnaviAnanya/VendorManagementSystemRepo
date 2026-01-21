@@ -1,4 +1,4 @@
-﻿namespace Dev3_Contract.Models
+﻿namespace VendorManagementSystemRepo.Models
 {
     public enum ContractType
     {

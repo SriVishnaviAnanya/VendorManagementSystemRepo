@@ -3,7 +3,7 @@ using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 
-namespace VendorManagement.Models
+namespace VendorManagementSystemRepo.Models
 {
     public class Users
     {

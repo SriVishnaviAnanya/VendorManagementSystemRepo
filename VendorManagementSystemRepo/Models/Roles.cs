@@ -1,4 +1,4 @@
-﻿namespace VendorManagement.Models
+﻿namespace VendorManagementSystemRepo.Models
 {
     public class Roles
     {

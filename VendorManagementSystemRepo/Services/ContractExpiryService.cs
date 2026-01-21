@@ -1,6 +1,6 @@
-﻿using Dev3_Contract.Data;
+﻿using VendorManagementSystemRepo.Data;
 
-using Dev3_Contract.Models;
+using VendorManagementSystemRepo.Models;
 
 using Microsoft.Extensions.Hosting;
 
@@ -30,7 +30,7 @@ public class ContractExpiryService : BackgroundService
 
             using var scope = _scopeFactory.CreateScope();
 
-            var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            var context = scope.ServiceProvider.GetRequiredService<VendorManagementSystemDb>();
 
             var expiredContracts = await context.Contracts
 

@@ -1,6 +1,6 @@
-@VendorManagementSystemRepo_HostAddress = http://localhost:5044
+@VendorManagementSystemRepoSystemRepo_HostAddress = http://localhost:5044
 
-GET {{VendorManagementSystemRepo_HostAddress}}/weatherforecast/
+GET {{VendorManagementSystemRepoSystemRepo_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

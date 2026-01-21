@@ -1,12 +1,13 @@
-﻿using Dev3_Contract.Data;
+﻿using VendorManagementSystemRepo.Data;
 
-using Dev3_Contract.DTOs;
+using VendorManagementSystemRepo.DTOs;
 
-using Dev3_Contract.Models;
+using VendorManagementSystemRepo.Models;
 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-namespace Dev3_Contract.Controllers
+namespace VendorManagementSystemRepo.Controllers
 
 {
 
@@ -18,9 +19,9 @@ namespace Dev3_Contract.Controllers
 
     {
 
-        private readonly AppDbContext _context;
+        private readonly VendorManagementSystemDb _context;
 
-        public ContractsController(AppDbContext context)
+        public ContractsController(VendorManagementSystemDb context)
 
         {
 

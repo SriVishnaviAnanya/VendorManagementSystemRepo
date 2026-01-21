@@ -1,5 +1,5 @@
-﻿using Dev3_Contract.Models;
-namespace Dev3_Contract.DTOs
+﻿using VendorManagementSystemRepo.Models;
+namespace VendorManagementSystemRepo.DTOs
 {
     public class UpdateContractStatusDto
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace Dev3_Contract.Models
+namespace VendorManagementSystemRepo.Models
 {
     public class Contract
     {

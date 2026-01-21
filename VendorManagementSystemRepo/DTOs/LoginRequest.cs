@@ -1,4 +1,4 @@
-﻿namespace VendorManagement.DTO
+﻿namespace VendorManagementSystemRepo.DTO
 {
     public class LoginRequest
     {

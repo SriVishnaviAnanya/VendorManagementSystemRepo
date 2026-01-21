@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace GovernanceApi.Models
+namespace VendorManagementSystemRepo.Models
 {
     public class NonComplianceLog
     {

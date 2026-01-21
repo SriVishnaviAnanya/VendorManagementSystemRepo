@@ -1,7 +1,7 @@
-﻿using GovernanceApi.DTOs;
-using GovernanceApi.Models;
+﻿using VendorManagementSystemRepo.DTOs;
+using VendorManagementSystemRepo.Models;
 
-namespace GovernanceApi.Services
+namespace VendorManagementSystemRepo.Services
 {
     public interface IComplianceService
     {

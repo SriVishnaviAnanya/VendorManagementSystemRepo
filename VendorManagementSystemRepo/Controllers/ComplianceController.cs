@@ -1,12 +1,12 @@
-﻿using GovernanceApi.Data;
-using GovernanceApi.DTOs;
-using GovernanceApi.Models;
-using GovernanceApi.Services;
+﻿using VendorManagementSystemRepo.Data;
+using VendorManagementSystemRepo.DTOs;
+using VendorManagementSystemRepo.Models;
+using VendorManagementSystemRepo.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-namespace GovernanceApi.Controllers
+namespace VendorManagementSystemRepo.Controllers
 {
     [EnableCors("Open")]
     [Route("api/[controller]")]
@@ -14,9 +14,9 @@ namespace GovernanceApi.Controllers
 
     public class ComplianceController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly VendorManagementSystemDb _context;
         private readonly IComplianceService _service;
-        public ComplianceController(AppDbContext context, IComplianceService service)
+        public ComplianceController(VendorManagementSystemDb context, IComplianceService service)
         {
             _context = context;
             _service = service;
@@ -87,8 +87,8 @@ namespace GovernanceApi.Controllers
         //    if (c.NDASigned || c.CertificationsValid || c.RegulatoryCompliant) return "Partially Compliant";
         //    return "Non-Compliant";
         //}
-        //private readonly AppDbContext _context;
-        //public ComplianceController(AppDbContext context)
+        //private readonly VendorManagementSystemDb _context;
+        //public ComplianceController(VendorManagementSystemDb context)
         //{
         //    _context = context;
         //}

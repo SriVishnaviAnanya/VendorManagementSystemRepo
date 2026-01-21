@@ -7,11 +7,11 @@ using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using VendorManagement.Models;
-using VendorManagement.Data;
+using VendorManagementSystemRepo.Models;
+using VendorManagementSystemRepo.Data;
 using Microsoft.AspNetCore.Cors;
 
-namespace VendorManagement.Controllers
+namespace VendorManagementSystemRepo.Controllers
 {
     [EnableCors("AllowAngular")]
     [Route("api")]
@@ -19,9 +19,9 @@ namespace VendorManagement.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IConfiguration _config;
-        private readonly AppDbContext _context;
+        private readonly VendorManagementSystemDb _context;
 
-        public AuthController(IConfiguration config, AppDbContext context)
+        public AuthController(IConfiguration config, VendorManagementSystemDb context)
         {
             _config = config;
             _context = context;

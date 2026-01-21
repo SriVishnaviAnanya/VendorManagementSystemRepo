@@ -1,12 +1,12 @@
-﻿using Dev3_Contract.Data;
-using Dev3_Contract.Models;
+﻿using VendorManagementSystemRepo.Data;
+using VendorManagementSystemRepo.Models;
 using Microsoft.AspNetCore.Mvc;
 [ApiController]
 [Route("api/contracts")]
 public class ContractRenewalController : ControllerBase
 {
-    private readonly AppDbContext _context;
-    public ContractRenewalController(AppDbContext context)
+    private readonly VendorManagementSystemDb _context;
+    public ContractRenewalController(VendorManagementSystemDb context)
     {
         _context = context;
     }

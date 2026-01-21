@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace Dev3_Contract.DTOs
+namespace VendorManagementSystemRepo.DTOs
 {
     public class CreateContractWithVendorDto
     {

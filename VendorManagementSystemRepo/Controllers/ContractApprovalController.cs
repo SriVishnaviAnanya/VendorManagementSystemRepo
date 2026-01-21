@@ -1,13 +1,13 @@
-﻿using Dev3_Contract.Data;
-using Dev3_Contract.Models;
+﻿using VendorManagementSystemRepo.Data;
+using VendorManagementSystemRepo.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 [ApiController]
 [Route("api/contracts")]
 public class ContractApprovalController : ControllerBase
 {
-    private readonly AppDbContext _context;
-    public ContractApprovalController(AppDbContext context)
+    private readonly VendorManagementSystemDb _context;
+    public ContractApprovalController(VendorManagementSystemDb context)
     {
         _context = context;
     }

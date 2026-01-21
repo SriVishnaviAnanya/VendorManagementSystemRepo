@@ -1,6 +1,6 @@
-﻿using GovernanceApi.Models;
+﻿using VendorManagementSystemRepo.Models;
 
-namespace GovernanceApi.Services
+namespace VendorManagementSystemRepo.Services
 {
     public class PerformanceService
     {

@@ -1,4 +1,4 @@
-﻿using Dev3_Contract.Data;
+﻿using VendorManagementSystemRepo.Data;
 
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,9 +12,9 @@ public class ContractVersionController : ControllerBase
 
 {
 
-    private readonly AppDbContext _context;
+    private readonly VendorManagementSystemDb _context;
 
-    public ContractVersionController(AppDbContext context)
+    public ContractVersionController(VendorManagementSystemDb context)
 
     {
 
