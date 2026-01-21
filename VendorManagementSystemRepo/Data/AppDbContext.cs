@@ -16,7 +16,14 @@ namespace VendorManagementSystemRepo.Data
         public object Vendors { get; internal set; }
         public DbSet<Contract> Contracts { get; set; }
 
+        public DbSet<ContractApproval> ContractApprovals { get; set; }
+
+        public DbSet<ContractRenewal> ContractRenewals { get; set; }
+
+        public DbSet<ApprovalHistory> ApprovalHistories { get; set; }
+
         public DbSet<ContractVersion> ContractVersions { get; set; }
+       
         //public ApplicationDbContext CreateDbContext(string[] args)
         //{
         //    IConfiguration configuration = new ConfigurationBuilder()
