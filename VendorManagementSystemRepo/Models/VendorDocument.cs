@@ -1,4 +1,4 @@
-﻿namespace Dev_2.Models
+﻿namespace VendorManagementSystemRepo.Models
 {
     public class VendorDocument
     {

@@ -1,6 +1,6 @@
-﻿using Dev_2.Enums;
+﻿using VendorManagementSystemRepo.Enums;
 
-namespace Dev_2.DTOs
+namespace VendorManagementSystemRepo.DTOs
 {
     public class VendorStatusUpdateDto
     {

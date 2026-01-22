@@ -1,4 +1,4 @@
-﻿namespace Dev_2.Enums
+﻿namespace VendorManagementSystemRepo.Enums
 {
     public enum RiskLevel
     {

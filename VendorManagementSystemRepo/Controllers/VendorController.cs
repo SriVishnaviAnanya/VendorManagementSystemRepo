@@ -1,11 +1,11 @@
-﻿using Dev_2.Data;
-using Dev_2.Models;
-using Dev_2.DTOs;
-using Dev_2.Enums;
+﻿using VendorManagementSystemRepo.Data;
+using VendorManagementSystemRepo.Models;
+using VendorManagementSystemRepo.DTOs;
+using VendorManagementSystemRepo.Enums;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Dev_2.Controllers
+namespace VendorManagementSystemRepo.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

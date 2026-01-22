@@ -1,4 +1,4 @@
-﻿namespace Dev_2.DTOs
+﻿namespace VendorManagementSystemRepo.DTOs
 {
     public class VendorCreateDto
     {

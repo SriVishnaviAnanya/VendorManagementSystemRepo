@@ -1,8 +1,8 @@
-﻿using Dev_2.Enums;
+﻿using VendorManagementSystemRepo.Enums;
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Dev_2.Models
+namespace VendorManagementSystemRepo.Models
 {
     public class Vendor
     {
