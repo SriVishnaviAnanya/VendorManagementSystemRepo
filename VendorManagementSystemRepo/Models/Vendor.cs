@@ -1,20 +1,20 @@
-﻿using System;
+﻿using Dev_2.Enums;
+using System;
 using System.ComponentModel.DataAnnotations;
 
-public class Vendor
+namespace Dev_2.Models
 {
-    public int VendorId { get; set; }
+    public class Vendor
+    {
+        public int VendorId { get; set; }
+        public string VendorName { get; set; }
+        public string Category { get; set; }
+        public string PrimaryContact { get; set; }
 
-    [Required]
-    public string VendorName { get; set; }
+        public VendorStatus Status { get; set; } = VendorStatus.Draft;
+        public RiskLevel RiskLevel { get; set; }
+        public int ComplianceScore { get; set; }
 
-    [Required]
-    public string Category { get; set; }
-
-    public string Email { get; set; }
-    public string Phone { get; set; }
-
-    public string Status { get; set; } = "Active"; // Active / Suspended
-
-    public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+    }
 }
